@@ -1,18 +1,18 @@
 .header {
-    width: 100%;
-    height: 58px;
-    background-color: var(--bg-color-header);
-    padding-top: 12px;
+  width: 100%;
+  height: 58px;
+  background-color: var(--bg-color-header);
+  padding-top: 12px;
 }
 
 .header__logo {
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-head);
-    line-height: var(--line-height-head);
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    color: var(--color-text);
-    text-align: center;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-head);
+  line-height: var(--line-height-head);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  text-align: center;
 }
 
 .main {
@@ -29,7 +29,7 @@
 }
 
 .info__img {
-  background-image: url('./assets/photo-desktop.png');
+  background-image: url("./assets/photo-desktop.png");
   width: 411px;
   height: 355px;
   background-size: cover;
@@ -182,7 +182,7 @@
   width: 100%;
   height: 1502px;
   position: absolute;
-  background-image: url('./assets/bgcolor.png');
+  background-image: url("./assets/bgcolor.png");
   z-index: 1;
   top: 0;
   left: 0;
@@ -216,16 +216,46 @@
   gap: 20px;
 }
 
-.image__item {
-  display: block;
+.image__container { 
+  position: relative;
+  width: 244px;
+  height: 244px;
   z-index: 1;
 }
 
-.image__item:hover {
+.image__item {
+  display: block;
   width: 244px;
   height: 244px;
-  background-image: url('./assets/bgcolor.png');
+  object-fit: contain;
+}
+
+.opasity {
+  display: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
   background-size: contain;
+  background-image: url('./assets/glass.png');
+  left: 50%;
+  top: 45%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+.image__container:hover > .opasity {
+  display: block;
+}
+
+.image__container:hover > .opasity-bg {
+  position: absolute;
+  width: 244px;
+  height: 244px;
+  background: rgba(25, 132, 155, 0.5);
+  background-size: cover;
+  top: 0;
+  right: 0;
   z-index: 2;
 }
 
@@ -241,7 +271,7 @@
 .footer__logo {
   width: 92px;
   height: 92px;
-  background-image: url('./assets/logo.png');
+  background-image: url("./assets/logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 50%;
@@ -290,4 +320,143 @@
   color: rgba(255, 255, 255, 0.7);
   background-color: var(--bg-color-footer);
   padding-top: 17px;
+}
+
+@media (max-width: 1270px) and (min-width: 850px) {
+  .main {
+    max-width: 100%;
+    height: 1393px;
+    padding: 51px 71px 51px 67px;
+  }
+
+  .info {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .info__img {
+    background-image: url("./assets/photo-tablet.png");
+    width: 762px;
+    height: 355px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .info__contact {
+    width: 762px;
+    height: 100%;
+    margin-left: 0;
+  }
+
+  .info__head {
+    margin-top: 65px;
+  }
+
+  .portfolio {
+    padding: 60px 68px 51px 0px;
+  }
+
+  .image {
+  gap: 15px;
+  }
+
+  .image__container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .image__item {
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 850px) {
+  .main {
+    max-width: 100%;
+    height: 1888px;
+    padding: 51px 17px 53px 17px;
+  }
+
+  .info {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .info__img {
+    background-image: url("./assets/photo-mob.png");
+    width: 341px;
+    height: 355px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .info__contact {
+    width: 340px;
+    height: 100%;
+    margin-left: 0;
+  }
+
+  .info__head {
+    margin-top: 62px;
+  }
+
+  .modal {
+    display: none;
+    width: 260px;
+    height: 800px;
+    background-color: var(--bg-color-main);
+    padding: 10px 15px 5px 15px;
+    z-index: 2;
+    left: 10px;
+    top: 100px;
+    transform: none;
+  }
+
+  .modal__name {
+    width: 240px;
+    height: 50px;
+  }
+
+  .modal__email {
+    width: 240px;
+    height: 50px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .modal__message {
+    width: 220px;
+    height: 350px;
+    margin: 20px 0 25px 0;
+  }
+
+  .modal__btn {
+    width: 260px;
+    height: 48px;
+  }
+
+  .portfolio {
+    padding: 44px 15px 53px 15px;
+  }
+
+  .image {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  .image__container {
+    width: 165px;
+    height: 165px;
+  }
+
+  .image__item {
+    display: block;
+    width: 165px;
+    height: 165px;
+    object-fit: contain;
+  }
 }
