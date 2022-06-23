@@ -1,0 +1,293 @@
+.header {
+    width: 100%;
+    height: 58px;
+    background-color: var(--bg-color-header);
+    padding-top: 12px;
+}
+
+.header__logo {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-head);
+    line-height: var(--line-height-head);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--color-text);
+    text-align: center;
+}
+
+.main {
+  position: relative;
+  max-width: 100%;
+  height: 1085px;
+  background-color: var(--bg-color-main);
+  padding: 51px 75px 99px 227px;
+}
+
+.info {
+  display: flex;
+  justify-content: start;
+}
+
+.info__img {
+  background-image: url('./assets/photo-desktop.png');
+  width: 411px;
+  height: 355px;
+  background-size: cover;
+}
+
+.info__contact {
+  width: 559px;
+  height: 100%;
+  margin-left: 68px;
+}
+
+.info__head {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-head);
+  line-height: var(--line-height-head);
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+}
+
+.info__line {
+  width: 100%;
+  height: 4px;
+  background-color: var(--bg-color-header);
+  margin: 14px 0 12px 0;
+}
+
+.info__heading {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-heading);
+  line-height: var(--line-height-heading);
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+}
+
+.info__text {
+  font-weight: var(--font-weight-norm);
+  font-size: var(--font-size-pharag);
+  line-height: var(--line-height-pharag);
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+  margin: 30px 0;
+}
+
+.info__btn {
+  width: 290px;
+  height: 48px;
+  background-color: var(--bg-color-main);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-butt);
+  line-height: var(--line-height-butt);
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  border-color: var(--color-text);
+}
+
+.info__btn:hover {
+  background-color: var(--bg-color-header);
+  border: none;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  width: 656px;
+  height: 586px;
+  background-color: var(--bg-color-main);
+  padding: 49px 45px 58px 44px;
+  z-index: 2;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__heading {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-heading);
+  line-height: var(--line-height-heading);
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+}
+
+.modal__text {
+  font-weight: var(--font-weight-norm);
+  font-size: var(--font-size-pharag);
+  line-height: var(--line-height-pharag);
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+  margin: 15px 0 26px 0;
+}
+
+.modal__name {
+  width: 200px;
+  height: 50px;
+  background-color: var(--bg-color-input);
+  padding-left: 16px;
+  border: none;
+  font-weight: 300;
+  font-size: var(--font-size-pharag);
+  line-height: var(--line-height-pharag);
+  letter-spacing: 0.01em;
+  color: var(--color-text-input);
+}
+
+.modal__email {
+  width: 347px;
+  height: 50px;
+  background-color: var(--bg-color-input);
+  padding-left: 22px;
+  margin-left: 20px;
+  border: none;
+  font-weight: 300;
+  font-size: var(--font-size-pharag);
+  line-height: var(--line-height-pharag);
+  letter-spacing: 0.01em;
+  color: var(--color-text-input);
+}
+
+.modal__message {
+  width: 567px;
+  height: 219px;
+  background-color: var(--bg-color-input);
+  padding: 16px 22px;
+  margin: 20px 0 65px 0;
+  border: none;
+  font-weight: var(--font-weight-norm);
+  font-size: var(--font-size-pharag);
+  line-height: var(--line-height-pharag);
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+}
+
+.modal__btn {
+  width: 250px;
+  height: 48px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-butt);
+  line-height: var(--line-height-butt);
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  background-color: var(--bg-color-main);
+  border-color: var(--color-text);
+}
+
+.bg-color {
+  display: none;
+  width: 100%;
+  height: 1502px;
+  position: absolute;
+  background-image: url('./assets/bgcolor.png');
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.portfolio {
+  padding: 104px 175px 99px 0px;
+}
+
+.portfolio__heading {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-heading);
+  line-height: var(--line-height-heading);
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+}
+
+.portfolio__text {
+  font-weight: var(--font-weight-norm);
+  font-size: var(--font-size-butt);
+  line-height: var(--line-height-butt);
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+  padding: 15px 0 28px 0;
+}
+
+.image {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.image__item {
+  display: block;
+  z-index: 1;
+}
+
+.image__item:hover {
+  width: 244px;
+  height: 244px;
+  background-image: url('./assets/bgcolor.png');
+  background-size: contain;
+  z-index: 2;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 161px;
+  background-color: var(--bg-color-header);
+  padding-top: 42px;
+}
+
+.footer__logo {
+  width: 92px;
+  height: 92px;
+  background-image: url('./assets/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.footer__info {
+  margin-left: 30px;
+}
+
+.footer__info-name {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-foot);
+  line-height: var(--line-height-foot);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin: 6px 0;
+}
+
+.footer__info-tel {
+  font-weight: var(--font-weight-norm);
+  font-size: var(--font-size-butt);
+  line-height: var(--line-height-butt);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.footer__info-addres {
+  font-weight: var(--font-weight-norm);
+  font-size: var(--font-size-pharag);
+  line-height: var(--line-height-pharag);
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+  margin-top: 6px;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 44px;
+  font-weight: 500;
+  font-size: var(--font-size-footer);
+  line-height: var(--line-height-footer);
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: var(--bg-color-footer);
+  padding-top: 17px;
+}
