@@ -393,6 +393,11 @@
     height: 180px;
     object-fit: contain;
   }
+
+  .image__container:hover > .opasity-bg {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -485,5 +490,10 @@
     width: 165px;
     height: 165px;
     object-fit: contain;
+  }
+
+  .image__container:hover > .opasity-bg {
+    width: 165px;
+    height: 165px;
   }
 }
